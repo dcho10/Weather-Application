@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Application</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1>David's Weather Application</h1>
+        </nav>
+    </header>
+
+    <main>
+    <container class="container">
+        <aside class="search-aside">    
+            <section>
+                <section class="search-bar">
+                    <input type="text" class="search-text" id="cityInput" placeholder="Search for a city">
+                    <button class="search">Search</button>
+                </section>
+                <section class="search-history">
+                    <h2> Search History </h2>
+                    <ul id="searchHistory"></ul>
+                </section>
+            </section>
+        </aside>
+        
+        <section class="info">
+            <section class="current-temperature">
+                <h2 class="date"></h2>
+                <h2 class="city"></h2>
+                <img class="icon">
+                <h2 class="condition"></h2>
+                <h3 class="temperature"></h3>
+                <h4 class="humidity"></h4>
+                <h5 class="wind-speed"></h5>
+            </section>
+            
+            <section class="forecast">
+            </section>
+        </section>
+    </container>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>

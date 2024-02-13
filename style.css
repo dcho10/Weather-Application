@@ -1,0 +1,94 @@
+:root {
+    --navy-blue: #1D2D5C;
+    --royal-blue: #134A8E;
+    --red: #E8291C;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    justify-content: space-between;
+    background-color: var(--royal-blue);
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 36px;
+    padding-top: 25px;
+}
+
+.container {
+    display: flex;
+} 
+
+.search-aside {
+    width: 20%;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-text {
+    margin: 10px;
+    height: 30px;
+}
+
+.info {
+    flex: 1;
+}
+
+.search {
+    background-color: var(--royal-blue);
+    padding: 10px;
+    color: var(--white);
+    border-color: var(--navy-blue);
+    border-width: 5px;
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.current-temperature {
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    margin: 10px;
+}
+
+.dayForecast {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+}
+
+h3, h4, h5 {
+    margin: 5px;
+}
+
+.search:hover {
+    cursor: pointer;
+    padding: 15px;
+}
