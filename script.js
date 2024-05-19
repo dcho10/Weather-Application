@@ -71,7 +71,7 @@ function displayTemperature () {
     document.querySelector(".temperature").innerHTML = "Temperature: " + Math.round(weatherData.list[0].main.temp) + " °C";
 
     var iconCode = weatherData.list[0].weather[0].icon;
-    var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+    var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
     var iconEl = document.querySelector(".icon");
     iconEl.src = iconUrl;
     iconEl.alt = "weather-icon";
@@ -113,7 +113,7 @@ function displayForecast() {
         var condition = weatherData.list[i].weather[0].main; 
 
         var iconCode = weatherData.list[i].weather[0].icon;
-        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
 
         var forecastItem = document.createElement("section");
         forecastItem.classList.add("dayForecast");
