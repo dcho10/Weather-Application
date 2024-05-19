@@ -12,7 +12,7 @@ function getApi () {
     }
     
     // Makes the city input dynamic:
-    var requestUrl ="http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&appid=cf47c24adce42f69f08e497c8c6029c9";
+    var requestUrl ="https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&appid=cf47c24adce42f69f08e497c8c6029c9";
     
     // Fetches data based on city input:
     fetch(requestUrl)
@@ -37,7 +37,7 @@ function getApi () {
             console.log("Longitude:", lon);
 
             // Makes the forecast link dynamic:
-            var forecastUrl = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=cf47c24adce42f69f08e497c8c6029c9&units=metric";
+            var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=cf47c24adce42f69f08e497c8c6029c9&units=metric";
 
             fetch (forecastUrl)
                 .then (function (forecastResponse) {
