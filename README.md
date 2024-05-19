@@ -13,5 +13,5 @@ There will also be links and images to the application and repository.
 
 ### Links to the application:
 
-# Repository: https://github.com/dcho10/Weather-Application
+# Repository: https://dcho10.github.io/Weather-Application/
 # Application: https://dcho10.github.io/Weather-Application/
